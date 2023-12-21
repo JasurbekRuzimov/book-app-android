@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,NotSibling">
+
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_menu"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/appName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/appName"
+                tools:ignore="ContentDescription,UseAppTint" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="74dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ScrollViewCount">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_usti"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_1"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/a2"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Badiiy kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_2"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/book_f"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Ertak kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_3"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/audio_book"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Audio kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_4"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/money"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Siyosiy kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_usti"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_5"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/a1"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:text="Diniy kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:id="@+id/cat_6"
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:orientation="vertical"
+                            android:padding="15dp"
+                            tools:ignore="MissingPrefix">
+
+
+                            <ImageView
+                                android:layout_width="130dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:src="@drawable/book"
+                                tools:ignore="ContentDescription,InefficientWeight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Detektiv kitoblar"
+                                android:textColor="@color/primary"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/nav_menu_gradient_background"
+        android:fitsSystemWindows="true"
+        android:paddingTop="20dp"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/primary"
+        app:itemTextColor="@color/primary"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
