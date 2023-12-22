@@ -1,6 +1,5 @@
 ﻿# book-app-android
 
-Book App for everyone 🔥
 
 Book App - `Splash Screen`
 
