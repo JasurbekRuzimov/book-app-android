@@ -53,15 +53,15 @@
             tools:ignore="ContentDescription,UseAppTint" />
 
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <ScrollView
+        android:id="@+id/scrollViewAudio"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="74dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,11 +77,12 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="2dp"
                 app:cardUseCompatPadding="true">
@@ -93,7 +94,7 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Mehrobdan chayon"
+                    android:text="Asalari Billan Orgimchak"
                     android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -102,6 +103,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -118,7 +120,7 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Ilm va jaholat"
+                    android:text="Badaviyning Ziyrakligi"
                     android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -127,6 +129,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -142,32 +145,7 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Oltin tarvuz"
-                    android:textColor="@color/primary"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="2dp"
-                app:cardUseCompatPadding="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:gravity="center"
-                    android:text="Dono Dehqon"
+                    android:text="Ambe va Rambe"
                     android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -177,6 +155,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -192,16 +171,17 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Muqbil toshotar"
+                    android:text="Dengiz Nega Sho`r"
+                    android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
 
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -217,7 +197,32 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Vatanparvarlar"
+                    android:text="Dog`da Qolgan Qarg'a"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/audio6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Ilon ila Ming`oyoq"
                     android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -226,6 +231,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/audio7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -242,7 +248,7 @@
                     android:layout_margin="20dp"
                     android:fontFamily="@font/montserrat"
                     android:gravity="center"
-                    android:text="Qarg'a biln qo'zi"
+                    android:text="Olmaxon"
                     android:textColor="@color/primary"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -301,5 +307,69 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewAudio">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playingNameId"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="KITOB nomi"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:max="100"
+                android:padding="8dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:background="@color/primary"
+            android:fontFamily="@font/montserrat"
+            android:onClick="toggleAudio"
+            android:padding="2dp"
+            android:text="Play"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="HardcodedText,OnClick,SmallSp,UsingOnClickInXml" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

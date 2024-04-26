@@ -35,13 +35,14 @@
         app:layout_constraintTop_toBottomOf="@+id/appName"
         tools:ignore="HardcodedText,MissingConstraints" />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="22dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="RuzimovDev"
+        android:text="Hasanboyeva Shahlo"
         android:textColor="@color/primary"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -49,6 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
